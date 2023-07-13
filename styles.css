@@ -1,0 +1,145 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    background-color: azure;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+main {
+    margin: 80px 20px 0 20px;
+    
+}
+
+.logo {
+    width: 70px;
+}
+
+header nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(58, 57, 57);
+}
+
+button {
+    all: unset;
+    width: 100px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 15px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+h1 {
+    width: 300px;
+    animation-name: text-appear-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+p {
+    width: 300px;
+    animation-name: text-appear-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.first-nav {
+    display: flex;
+    align-items: center;
+}
+
+.second-nav {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    height: 450px;
+    background-color: lightgreen;
+    border: 2px solid aqua;
+    margin: 20px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    
+    /* overflow-x: hidden komanda uzdejus ant body, galima visa puslapi tvarkyt kad i sona neitu*/
+}
+
+.text-box {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-img {
+    width: 300px;
+    height: 600px;
+    rotate: 12deg;
+    border-radius: 40px;
+    border: 5px solid green;
+    position: relative;
+    right: 100px;
+    bottom: -100px;
+    animation-name: phone-appear;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+.cards-wrapper {
+    width: 100vh;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes text-appear-left {
+    0% { opacity: 0;
+        margin-right: 50px; }
+    100% { opacity: 1;
+        margin-right: 0;}
+}
+
+@keyframes text-appear-right {
+    0% { opacity: 0;
+        margin-left: 50px; }
+    100% { opacity: 1;
+        margin-left: 0;}
+}
+
+@keyframes phone-appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
